@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*a #(cerquilha) em HTML é id e em CSS é hashtag* (so pode um elemento)/
+/*tudo em HTML é class = em CSS é ponto(.)* (pode varios elementos)*/
+body{
+    background-color: #b5f1b5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #297045;
+}
+
+h1#main{
+    text-align: center;
+    background-color: #204E4A;
+    color: whitesmoke
+}
+
+h2{
+    color: rgb(60, 175, 119);
+}
+
+.basic{
+    color: #204E4A;
+    font-weight: bold;
+}
+
+.intermediary{
+    color: yellowgreen;
+}
+
+.avanced{
+    color: rgb(141, 17, 17);
+}
+
+.destaque{
+    background-color: rgb(193, 219, 142);
+}
