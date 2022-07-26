@@ -6,79 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        body {
+        body{
             font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
-            border-collapse: collapse;
+            width: 500px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
         }
 
         caption {
-            font-size: 1.3em;
+            font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
+            background-color: lightgray;
         }
-
-        th, td {
-            border: 1px solid gray;
-            padding: 10px;
+        td.num {
+            text-align: right;
         }
     </style>
 </head>
 <body>
-    <h1>Exercício de Tabelas</h1>
+    <h1>Lista dos 10 Estados mais populosos do Brasil em 2021</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THREAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
     <table>
-        <caption>
-            Filmes Favoritos
-        </caption>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
+
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
-                <td>Ana Maria Santos</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
             </tr>
             <tr>
-                <td>Beatriz Sousa</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batman</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
             </tr>
             <tr>
-                <td>Claudia Melo</td>
-                <td>Interstella</td>
-                <td>Matrix</td>
-                <td>Big Hero</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
-                <td>Bruno Mendonça</td>
-                <td>Clube da Luta</td>
-                <td>Silencio dos Inocentes</td>
-                <td>Gladiador</td>
+                <td>Bahia</td>
+                <td class="num">14 985 284</td>
             </tr>
             <tr>
-                <td>Daniel Lourenço</td>
-                <td>Clube dos Cincos</td>
-                <td>Watchman</td>
-                <td>Vingadores - Guerra Infinita</td>
+                <td>Paraná</td>
+                <td class="num">11 597 484</td>
             </tr>
             <tr>
-                <td>Fabiano Mota</td>
-                <td>Star Wars</td>
-                <td>Táxi Driver</td>
-                <td>Gênio Indomável</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 777 124</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 338 473</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 206 589</td>
             </tr>
         </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+
     </table>
     
 </body>
